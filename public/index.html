@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Fitness Trainer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="welcome" class="card">
+      <h1>Welcome to AI Fitness Trainer</h1>
+      <p>Click Start Practicing to begin.</p>
+      <button id="startBtn" class="primary">Start Practicing</button>
+    </div>
+
+    <div id="choices" class="card hidden">
+      <h2>Choose your exercise</h2>
+      <div class="options">
+        <button class="exercise" data-ex="bicep">Bicep Curl</button>
+        <button class="exercise" data-ex="squat">Squat</button>
+        <button class="exercise" data-ex="pushup">Push Up</button>
+      </div>
+      <p class="note">When you choose an exercise, the server will launch the local Python app which will open your webcam window. Press 'q' in that window to stop.</p>
+      <button id="backBtn" class="secondary">Back</button>
+    </div>
+
+    <div id="status" class="card hidden">
+      <h3 id="statusText">Starting...</h3>
+      <p>If nothing happens, make sure your Python & dependencies are installed and the server terminal has no errors.</p>
+      <button id="okBtn" class="primary">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
